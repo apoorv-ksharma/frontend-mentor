@@ -186,6 +186,8 @@ export default function AgeCalulator() {
             isError={!!errors}
             errMsg={errors?.day ?? ''}
             placeholder='DD'
+            type='number'
+            pattern='[0-9]*'
           />
           <Input
             label='month'
@@ -196,6 +198,8 @@ export default function AgeCalulator() {
             isError={!!errors}
             errMsg={errors?.month ?? ''}
             placeholder='MM'
+            type='number'
+            pattern='[0-9]*'
           />
           <Input
             label='year'
@@ -206,6 +210,8 @@ export default function AgeCalulator() {
             isError={!!errors}
             errMsg={errors?.year ?? ''}
             placeholder='YYYY'
+            type='number'
+            pattern='[0-9]*'
           />
         </section>
         <section className='flex flex-row items-center relative h-28 md:h-24'>

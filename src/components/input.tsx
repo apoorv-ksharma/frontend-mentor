@@ -7,6 +7,8 @@ export default function Input({
   isError,
   errMsg,
   placeholder,
+  type,
+  pattern,
 }: {
   label: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -14,6 +16,8 @@ export default function Input({
   isError: boolean;
   errMsg: string;
   placeholder: string;
+  type: string;
+  pattern: string;
 }) {
   return (
     <div className='flex flex-col gap-2'>
@@ -33,6 +37,8 @@ export default function Input({
         } w-20 md:w-40 font-black text-xl md:text-3xl`}
         placeholder={placeholder}
         id={label}
+        type={type}
+        pattern={pattern}
       ></input>
       {!!errMsg && <p className='font-poppins text-lightRed'>{errMsg}</p>}
     </div>
