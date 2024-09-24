@@ -18,6 +18,7 @@ export default function Input({
   return (
     <div className='flex flex-col gap-2'>
       <label
+        htmlFor={label}
         className={`font-bold-poppins uppercase tracking-[0.15rem] md:tracking-[0.2rem] ${
           isError ? 'text-lightRed' : 'text-smokeyGrey'
         } font-bold md:text-sm text-xs`}
@@ -31,6 +32,7 @@ export default function Input({
           isError ? 'border-lightRed' : 'border-lightGrey'
         } w-20 md:w-40 font-black text-xl md:text-3xl`}
         placeholder={placeholder}
+        id={label}
       ></input>
       {!!errMsg && <p className='font-poppins text-lightRed'>{errMsg}</p>}
     </div>
