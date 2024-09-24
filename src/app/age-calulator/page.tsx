@@ -8,7 +8,7 @@ import { useCallback, useState } from 'react';
 function Text({ number, label }: { number: string | null; label: string }) {
   return (
     <div className='flex flex-row gap-2 md:gap-2 md:mb-2'>
-      <div className='text-purple font-extra-bold-italic-poppins text-6xl md:text-[104px]'>
+      <div className='text-purple font-extra-bold-italic-poppins text-6xl md:text-[104px] text-nowrap'>
         {number ? number : '--'}
       </div>
       <div className='text-offBlack font-extra-bold-italic-poppins text-6xl md:text-[104px]'>
@@ -175,7 +175,7 @@ export default function AgeCalulator() {
   }, []);
   return (
     <>
-      <main className='md:w-[52.5em] w-[21em] bg-white rounded-br-[7em] md:rounded-br-[14em] rounded-3xl md:px-[3.5em] md:py-[4em] px-[1.5em] py-[3em]'>
+      <main className='md:w-[52.5em] w-[22em] bg-white rounded-br-[7em] md:rounded-br-[14em] rounded-3xl md:px-[3.5em] md:py-[4em] px-[1.5em] py-[3em]'>
         <section className='flex flex-row gap-4 md:gap-8'>
           <Input
             label='day'
