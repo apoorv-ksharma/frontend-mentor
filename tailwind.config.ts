@@ -12,10 +12,21 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         yellow: "var(--yellow)",
-        grayLight: "var(--grayLight)"
+        grayLight: "var(--grayLight)",
+        white: "var(--white)",
+        offWhite: "var(--offWhite)",
+        lightGrey: "var(--lightGrey)",
+        smokeyGrey: "var(--smokeyGrey)",
+        offBlack: "var(--offBlack)",
+        purple: "var(--purple)",
+        lightRed: "var(--lightRed)",
       },
       fontFamily: {
-        figtree: ['Figtree', 'sans']
+        figtree: ['Figtree', 'sans'],
+        'bold-poppins': ['var(--font-bold-poppins)'],
+        'poppins': ['var(--font-poppins)'],
+        'poppins-italic': ['var(--font-poppins-italic)'],
+        'extra-bold-italic-poppins': ['var(--font-extra-bold-italic-poppins)']
       }
     },
   },

@@ -8,6 +8,13 @@
   --yellow: hsl(47, 88%, 63%);
   --grayLight: hsl(0, 0%, 42%);
   --gray950: hsl(0, 0%, 7%);
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightGrey: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%);
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
 }
 
 body {
