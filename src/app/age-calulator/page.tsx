@@ -84,7 +84,7 @@ export default function AgeCalulator() {
         });
       }
 
-      if (Number(date.month) > new Date(Number(date.year), 0, 0).getMonth()) {
+      if (Number(date.month) - 1 > new Date(Number(date.year), 0, 0).getMonth()) {
         isError = true;
 
         setError((prev) => {
