@@ -185,6 +185,7 @@ export default function AgeCalulator() {
             }}
             isError={!!errors}
             errMsg={errors?.day ?? ''}
+            placeholder='DD'
           />
           <Input
             label='month'
@@ -194,6 +195,7 @@ export default function AgeCalulator() {
             }}
             isError={!!errors}
             errMsg={errors?.month ?? ''}
+            placeholder='MM'
           />
           <Input
             label='year'
@@ -203,16 +205,15 @@ export default function AgeCalulator() {
             }}
             isError={!!errors}
             errMsg={errors?.year ?? ''}
+            placeholder='YYYY'
           />
         </section>
-        <section
-          onClick={() => validate()}
-          className='flex flex-row items-center relative h-28 md:h-24'
-        >
+        <section className='flex flex-row items-center relative h-28 md:h-24'>
           <div className='h-[2px] w-full bg-offWhite'></div>
           <Image
             alt='arrow'
             src={arrow}
+            onClick={() => validate()}
             className='translate-x-1/2 md:translate-x-0 hover:bg-offBlack bg-purple p-5 md:p-6 rounded-full absolute right-1/2 md:right-0 w-16 md:w-24'
           />
         </section>
