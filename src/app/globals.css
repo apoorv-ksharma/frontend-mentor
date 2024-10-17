@@ -15,6 +15,12 @@
   --offBlack: hsl(0, 0%, 8%);
   --purple: hsl(259, 100%, 65%);
   --lightRed: hsl(0, 100%, 67%);
+  --CFBlack: #000000;
+  --CFDarkPurple: #5c2dd5;
+  --CFPurple: #7945ff;
+  --CFPink: #fd6687;
+  --CFYellow: #ffce67;
+  --CFWhite: #ffffff;
 }
 
 body {

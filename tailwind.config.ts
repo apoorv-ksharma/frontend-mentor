@@ -20,13 +20,22 @@ const config: Config = {
         offBlack: "var(--offBlack)",
         purple: "var(--purple)",
         lightRed: "var(--lightRed)",
+        CFBlack: 'var(--CFBlack)',
+        CFDarkPurple: 'var(--CFDarkPurple)',
+        CFPurple: 'var(--CFPurple)',
+        CFPink: 'var(--CFPink)',
+        CFYellow: 'var(--CFYellow)',
+        CFWhite: 'var(--CFWhite)'
       },
       fontFamily: {
         figtree: ['Figtree', 'sans'],
         'bold-poppins': ['var(--font-bold-poppins)'],
         'poppins': ['var(--font-poppins)'],
         'poppins-italic': ['var(--font-poppins-italic)'],
-        'extra-bold-italic-poppins': ['var(--font-extra-bold-italic-poppins)']
+        'extra-bold-italic-poppins': ['var(--font-extra-bold-italic-poppins)'],
+        'space-grove-medium': ['var(--font-space-grove-medium)'],
+        'space-grove-bold': ['var(--font-space-grove-bold)'],
+        'space-grove-variable': ['var(--font-space-grove-variable)']
       }
     },
   },

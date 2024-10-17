@@ -9,6 +9,9 @@ export default function Home() {
       <Link className='p-2 bg-sky-500 rounded-md text-white' href='/blog-preview-card'>
         Blog Preview Card
       </Link>
+      <Link className='p-2 bg-sky-500 rounded-md text-white' href='/connect-four'>
+        Connect Four
+      </Link>
     </div>
   );
 }
