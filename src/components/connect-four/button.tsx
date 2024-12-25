@@ -1,10 +1,12 @@
 import playerIcon from '@/app/images/connect-four/player-vs-player.svg';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MouseEventHandler } from 'react';
 
 export enum ButtonColourScheme {
   standard = 'standard',
   highlighted = 'highlighted',
+  alert = 'alert',
 }
 
 export enum ButtonIconTypes {
@@ -16,11 +18,15 @@ export default function Button({
   text,
   icon,
   link,
+  onClickfunc,
+  centerText,
 }: {
   colourScheme: ButtonColourScheme;
   text: string;
   icon?: ButtonIconTypes;
   link?: string;
+  onClickfunc?: MouseEventHandler<HTMLButtonElement>;
+  centerText?: boolean;
 }) {
   const colourSchemes = {
     standard: {
@@ -28,6 +34,9 @@ export default function Button({
     },
     highlighted: {
       bg: 'bg-CFYellow',
+    },
+    alert: {
+      bg: 'bg-CFPink',
     },
   };
 
@@ -42,7 +51,11 @@ export default function Button({
       <Link
         href={link}
         prefetch={true}
-        className={`w-full flex justify-between items-center min-h-[72px] p-[12px] ${colourSchemes[colourScheme].bg} border-CFBlack rounded-3xl border-[3px] shadow-CFDefault hover:shadow-CFHover hover:border-CFDarkPurple`}
+        className={`w-full flex select-none ${
+          centerText ? 'justify-center' : 'justify-between'
+        } items-center min-h-[72px] p-[12px] ${
+          colourSchemes[colourScheme].bg
+        } border-CFBlack rounded-3xl border-[3px] shadow-CFDefault hover:shadow-CFHover hover:border-CFDarkPurple`}
       >
         <p className='font-space-grove-bold text-2xl uppercase text-left'>{text ?? ' '}</p>
         {icon && <Image src={icons[icon].image} alt={icons[icon].alt} />}
@@ -51,7 +64,12 @@ export default function Button({
   }
   return (
     <button
-      className={`w-full flex justify-between items-center min-h-[72px] p-[12px] ${colourSchemes[colourScheme].bg} border-CFBlack rounded-3xl border-[3px] shadow-CFDefault hover:shadow-CFHover hover:border-CFDarkPurple`}
+      onClick={onClickfunc}
+      className={`w-full flex select-none ${
+        centerText ? 'justify-center' : 'justify-between'
+      } items-center min-h-[72px] p-[12px] ${
+        colourSchemes[colourScheme].bg
+      } border-CFBlack rounded-3xl border-[3px] shadow-CFDefault hover:shadow-CFHover hover:border-CFDarkPurple`}
     >
       <p className='font-space-grove-bold text-2xl uppercase text-left'>{text ?? ' '}</p>
       {icon && <Image src={icons[icon].image} alt={icons[icon].alt} />}
