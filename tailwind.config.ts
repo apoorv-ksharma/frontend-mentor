@@ -27,6 +27,14 @@ const config: Config = {
         CFYellow: 'var(--CFYellow)',
         CFWhite: 'var(--CFWhite)'
       },
+      animation: {
+        "travel-test": "travel 2s"
+      },
+      keyframes: {
+        travel: {
+          "0%": { top: "0" },
+        }
+      },
       boxShadow: {
         "CFDefault": "0px 8px 0px 0px var(--CFBlack)",
         "CFHover": "0px 8px 0px 0px var(--CFDarkPurple)"

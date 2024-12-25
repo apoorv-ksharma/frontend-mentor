@@ -39,7 +39,7 @@ export const players = {
 
 export default function CurrentScore({ player, time }: { player: Players; time: string }) {
   return (
-    <div className='absolute -bottom-[125px] left-1/2 -translate-x-1/2 z-50'>
+    <div className='cursor-pointer select-none absolute -bottom-[125px] left-1/2 -translate-x-1/2 z-50'>
       <div className='relative'>
         <Image className='' src={players[player].turn} alt='redLargePointer' />
         <span className='absolute top-[40px] left-1/2 -translate-x-1/2 flex flex-col justify-center items-center'>
