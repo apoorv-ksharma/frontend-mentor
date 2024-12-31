@@ -65,7 +65,7 @@ export default function Button({
   return (
     <button
       onClick={onClickfunc}
-      className={`w-full flex select-none ${
+      className={`w-full flex select-none outline-none ${
         centerText ? 'justify-center' : 'justify-between'
       } items-center min-h-[72px] p-[12px] ${
         colourSchemes[colourScheme].bg
